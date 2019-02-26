@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esamana.myapplicationprueba.View.CreateAccountActivity">
+
+
+    <include layout="@layout/actionbar_toolbar"/>
+
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fillViewport="true"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/activity_vertical_margin"
+              android:orientation="vertical">
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:theme="@style/EditTextBlack"
+                 android:layout_marginTop="@dimen/edit_text_magin_create_account">
+
+              <android.support.design.widget.TextInputEditText
+                  android:id="@+id/correo"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/correo" />
+             </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/EditTextBlack"
+                  android:layout_marginTop="@dimen/edit_text_magin_create_account">
+
+                  <android.support.design.widget.TextInputEditText
+                      android:id="@+id/nombreCreateAccount"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/nombre" />
+              </android.support.design.widget.TextInputLayout>
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/EditTextBlack"
+                  android:layout_marginTop="@dimen/edit_text_magin_create_account">
+
+                  <android.support.design.widget.TextInputEditText
+                      android:id="@+id/usuario"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/user" />
+              </android.support.design.widget.TextInputLayout>
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/EditTextBlack"
+                  android:layout_marginTop="@dimen/edit_text_magin_create_account">
+
+                  <android.support.design.widget.TextInputEditText
+                      android:id="@+id/passwordCreateAccount"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/password_user" />
+              </android.support.design.widget.TextInputLayout>
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:theme="@style/EditTextBlack"
+                  android:layout_marginTop="@dimen/edit_text_magin_create_account">
+
+                  <android.support.design.widget.TextInputEditText
+                      android:id="@+id/confirm_password"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/confirm_password" />
+              </android.support.design.widget.TextInputLayout>
+
+              <Button
+                  android:id="@+id/bton_create_account"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/btn_create_account"
+                  android:theme="@style/RaisedButtonDark"
+                  android:background="@color/colorBlue700"
+                  android:textColor="@color/colorWhite"/>
+
+          </LinearLayout>
+
+
+
+
+      </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

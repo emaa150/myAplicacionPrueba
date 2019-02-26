@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/colorBlue500">
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.6">
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/efisat_logo"
+                     android:layout_centerInParent="true"/>
+
+                 </RelativeLayout>
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:fillViewport="true">
+
+                   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_horizontal_login">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextWhite">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre_user"
+                     />
+
+                </android.support.design.widget.TextInputLayout>
+
+                       <android.support.design.widget.TextInputLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:theme="@style/EditTextWhite">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_user"
+                   />
+                       </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_login"
+                    android:theme="@style/RaisedButtonDark"
+                    android:background="@color/colorBlue700"
+                    android:textColor="@color/colorWhite"
+                    android:onClick="actionLogin"/>
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center">
+               <TextView
+                   android:id="@+id/donHaveAccount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/texto_cuenta"
+                   android:textColor="@color/colorWhite"
+                   android:textStyle="bold"
+                   android:textSize="@dimen/size_text_account"/>
+            <TextView
+                android:id="@+id/creteHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_crear_cuenta"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_text_account"
+                android:layout_toRightOf="@id/donHaveAccount"
+                android:onClick="goCreateAccount"
+                />
+
+
+           </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+         </ScrollView>
+
+
+
+              </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EFIAPP</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="nombre_user">Nombre de Usuario</string>
+    <string name="password_user">Contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="btn_create_account">Crear Cuenta</string>
+    <string name="texto_cuenta">¿No tienes cuenta?, </string>
+    <string name="texto_crear_cuenta">Crea una aquí</string>
+    <string name="correo">Email</string>
+    <string name="nombre">Nombre</string>
+    <string name="user">Usuario</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="toolbar_button_createaccount">Crear Cuenta</string>
+    <string name="nombre_prueba">Efisat APP</string>
+    <string name="time_card">4 días</string>
+    <string name="like_number_card">10 Me Gusta</string>
+    <string name="search_tab">Buscar</string>
+    <string name="home_tab">Home</string>
+    <string name="profile_tab">Mi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
